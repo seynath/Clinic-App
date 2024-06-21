@@ -8,7 +8,7 @@
 FROM openjdk:17
 
 # Maintainer of the image
-LABEL maintainer="your-email@example.com"
+LABEL maintainer="ugcseynaththenura@gmail.com"
 
 # Add the WAR file to the webapps directory in Tomcat
 COPY target/petclinic.war /usr/local/tomcat/webapps/
