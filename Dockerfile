@@ -5,7 +5,7 @@
 
 
 # Use an official Tomcat runtime as a parent image
-FROM tomcat:9.0.65-jdk17-openjdk-slim
+FROM openjdk:17
 
 # Maintainer of the image
 LABEL maintainer="your-email@example.com"
