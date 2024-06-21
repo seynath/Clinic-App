@@ -11,10 +11,12 @@ FROM openjdk:17
 LABEL maintainer="ugcseynaththenura@gmail.com"
 
 # Add the WAR file to the webapps directory in Tomcat
-COPY target/petclinic.war /usr/local/tomcat/webapps/
+COPY target/petclinic.war /petclinic.war
 
 # Expose port 8080
 EXPOSE 8086
 
 # Run Tomcat
-CMD ["catalina.sh", "run"]
+# CMD ["catalina.sh", "run"]
+ENTRYPOINT ["java","-jar","/petclinic.war"]
+
